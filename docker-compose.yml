@@ -3,7 +3,21 @@ services:
   app:
     build: .
     command: 'rails s'
+    environment:
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=password
     volumes:
       - .:/app
+      - mysqld:/var/run/mysqld
     ports:
       - 3000:3000
+    links:
+      - db
+  db:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      - mysqld:/var/run/mysqld
+volumes:
+  mysqld: {}
