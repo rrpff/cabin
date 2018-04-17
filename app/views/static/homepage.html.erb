@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cabin.social</title>
+  <style>
+    main {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: auto;
+      max-width: 920px;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 48px;
+    }
+
+    h2:first-of-type {
+      margin-top: auto;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0;
+      padding: 0 0 16px 24px;
+      position: relative;
+    }
+
+    li:last-of-type {
+      padding-bottom: 0;
+    }
+
+    li:before {
+      content: "💥";
+      position: absolute;
+      left: 0px;
+      font-size: 12px;
+    }
+
+    li.complete-yes:before {
+      content: "✅";
+    }
+
+    li.complete-no:before {
+      content: "❌";
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>⛺️ cabin.social</h1>
+
+    <h2>A free social network for keeping in touch with humans.</h2>
+
+    <ul>
+      <li>No wall of endless shit. No algorithms. No advertisements or promoted content.</li>
+      <li>Add friends, family, colleagues, people you meet on the road, like any other social network.</li>
+      <li>Pin people to your homepage to only see updates from the people you really want to see updates from. You can look up the others when you feel like it.</li>
+      <li>End-to-end encryption means only the people you connect with can read your posts. Not even admins.</li>
+      <li>100% open source and decentralised. Host your own version and stay in touch with people on other networks.</li>
+    </ul>
+
+    <h2>Why?</h2>
+
+    <ul>
+      <li>Because I want to keep in touch with people that I meet through my life.</li>
+      <li>Because I don’t want to scroll through shit for hours.</li>
+      <li>Because I don’t want my data stored by strangers, or my behaviour manipulated.</li>
+    </ul>
+
+    <h2>Implementation</h2>
+
+    <ul>
+      <li>Prototype for now.</li>
+      <li>ActivityPub.</li>
+      <li>EncryptedEnvelope contains message and recipient pool.</li>
+      <li>Signal encryption protocol?</li>
+    </ul>
+
+    <h2>Features</h2>
+
+    <ul>
+      <li class="complete-no">Register.</li>
+      <li class="complete-no">Login.</li>
+      <li class="complete-no">Login on another device.</li>
+      <li class="complete-no">Add a friend.</li>
+      <li class="complete-no">Remove a friend.</li>
+      <li class="complete-no">View a friend's profile.</li>
+      <li class="complete-no">Post text to your profile.</li>
+      <li class="complete-no">Post images to your profile.</li>
+      <li class="complete-no">Post video to your profile.</li>
+      <li class="complete-no">Post audio to your profile.</li>
+      <li class="complete-no">Post sets of images, videos and audio to your profile.</li>
+      <li class="complete-no">@mention other users in your posts.</li>
+      <li class="complete-no">Comment on posts.</li>
+      <li class="complete-no">Post a bio?</li>
+      <li class="complete-no">Post maps?</li>
+      <li class="complete-no">Post events, and invite friends? Allow friends to invite their friends?</li>
+    </ul>
+  </main>
+</body>
+</html>
