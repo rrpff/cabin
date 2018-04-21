@@ -6,3 +6,6 @@ serve:
 
 test:
 		docker-compose run --rm app rspec
+
+test-watch:
+		docker-compose run --rm app guard
